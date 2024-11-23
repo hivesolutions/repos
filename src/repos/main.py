@@ -4,16 +4,12 @@
 import appier
 import appier_extras
 
+
 class ReposApp(appier.WebApp):
 
     def __init__(self, *args, **kwargs):
         appier.WebApp.__init__(
-            self,
-            name = "repos",
-            parts = (
-                appier_extras.AdminPart,
-            ),
-            *args, **kwargs
+            self, name="repos", parts=(appier_extras.AdminPart,), *args, **kwargs
         )
 
     def _version(self):
@@ -24,6 +20,7 @@ class ReposApp(appier.WebApp):
 
     def _observations(self):
         return "Modular repository management system"
+
 
 if __name__ == "__main__":
     app = ReposApp()

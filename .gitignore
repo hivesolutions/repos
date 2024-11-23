@@ -3,6 +3,11 @@
 
 session.shelve*
 
+.DS_Store
+
+/.env
+/.venv
+
 /dist
 /build
 /src/repos.egg-info
